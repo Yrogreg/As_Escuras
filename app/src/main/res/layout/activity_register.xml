@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_detalhes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.register.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/username"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_nome"
+        style="@style/Edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/digitName"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_dataNasc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nome" />
+
+    <TextView
+        android:id="@+id/tv_dataNasc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dateBirth"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/et_Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_nome" />
+
+    <EditText
+        android:id="@+id/et_Date"
+        style="@style/Edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/digitDate"
+        android:inputType="date"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/V_contianer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dataNasc" />
+
+    <View
+        android:id="@+id/V_contianer"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Date" />
+
+    <TextView
+        android:id="@+id/tv_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Gênero Biológico"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rg_genero"
+        app:layout_constraintEnd_toStartOf="@+id/tv_altura"
+        app:layout_constraintStart_toStartOf="@+id/V_contianer"
+        app:layout_constraintTop_toTopOf="@+id/V_contianer" />
+
+    <RadioGroup
+        android:id="@+id/rg_genero"
+        android:layout_width="108dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/V_contianer"
+        app:layout_constraintEnd_toStartOf="@id/np_altura"
+        app:layout_constraintStart_toStartOf="@+id/V_contianer"
+        app:layout_constraintTop_toBottomOf="@id/tv_genero">
+
+        <RadioButton
+            android:id="@+id/rb_masculino"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:text="@string/generomas"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rb_feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:text="@string/generofem"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/altura"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/np_altura"
+        app:layout_constraintEnd_toEndOf="@+id/V_contianer"
+        app:layout_constraintStart_toEndOf="@id/tv_genero"
+        app:layout_constraintTop_toTopOf="@+id/V_contianer" />
+
+    <NumberPicker
+        android:id="@+id/np_altura"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/V_contianer"
+        app:layout_constraintEnd_toEndOf="@+id/V_contianer"
+        app:layout_constraintStart_toEndOf="@+id/rg_genero"
+        app:layout_constraintTop_toBottomOf="@+id/tv_altura" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

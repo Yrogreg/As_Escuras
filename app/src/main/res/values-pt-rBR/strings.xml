@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ás Escuras</string>
+    <string name="digite_seu_e_mail">Digite seu e-mail</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="todo">tudo</string>
+    <string name="logo">logo</string>
+    <string name="title_home">Principal</string>
+    <string name="title_dashboard">Painel</string>
+    <string name="email">Nome de usuário</string>
+    <string name="password">Senha</string>
+    <string name="confirm_password">Confirmar senha</string>
+    <string name="register">Registrar</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_register">Se Cadastrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="welcome">Bem-vindo!</string>
+    <string name="invalid_username">E-mail inválido</string>
+    <string name="invalid_password">A senha deve ter >5 caracteres</string>
+    <string name="login_failed">Falha no login</string>
+    <string name="title_notifications">Notificação</string>
+
+    <string name="digitDate">Digite sua data de nascimento</string>
+    <string name="digitName">Digite seu nome</string>
+    <string name="username">Nome</string>
+    <string name="dateBirth">Data de nascimento</string>
+    <string name="genero">Gênero Biológico</string>
+    <string name="generomas">Masculino</string>
+    <string name="generofem">Feminino</string>
+    <string name="altura">Altura</string>
+
+</resources>
